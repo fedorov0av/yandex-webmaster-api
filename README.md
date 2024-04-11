@@ -62,7 +62,7 @@ result = client.get_popular_search_queries('<host_id>', date_from, date_to, quer
 from datetime import datetime, timedelta
 date_from = datetime.now() - timedelta(days=4)
 date_to = datetime.now()
-result = client.get_search_query_all_history('<host_id>', date_from, date_to, query_indicator=['TOTAL_SHOWS'], device_type_indicator='DESKTOP')
+result = client.get_search_query_all_history('<host_id>', query_indicator=['TOTAL_SHOWS'], date_from=date_from, date_to=date_to, device_type_indicator='DESKTOP')
 ```
 
 ### get single search query history
