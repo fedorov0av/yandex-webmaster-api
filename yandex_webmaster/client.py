@@ -1,9 +1,7 @@
-from typing import Optional
+from requests import Session
+from typing import Optional, List
 from datetime import datetime
 from urllib.parse import urlencode
-from typing import List
-
-from requests import Session
 
 from .errors import YandexWebmasterError
 
